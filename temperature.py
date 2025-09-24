@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 st.title("🌡 Temperature Converter")
 
 unit = st.radio(
@@ -28,4 +27,5 @@ if st.button("Convert"):
         fahrenheit = (temp_value - 273.15) * 9/5 + 32
         st.success(f"🌡 Celsius: {celsius:.2f} °C")
         st.success(f"🌡 Fahrenheit: {fahrenheit:.2f} °F")
+
 
